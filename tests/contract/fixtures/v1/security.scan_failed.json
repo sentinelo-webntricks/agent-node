@@ -1,0 +1,9 @@
+{
+    "scan_id": 992,
+    "type": "full",
+    "status": "failed",
+    "error": "Timeout du scan de fichiers",
+    "error_message": "Timeout du scan de fichiers",
+    "started_at": "2026-08-08T05:00:00+00:00",
+    "completed_at": "2026-08-08T05:20:00+00:00"
+}

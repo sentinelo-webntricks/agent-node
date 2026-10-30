@@ -1,0 +1,3 @@
+tests/fixtures/node-*
+.sentinelo/
+node_modules/

@@ -1,0 +1,41 @@
+{
+    "scan_id": 991,
+    "scan_type": "full",
+    "status": "completed",
+    "score": 82,
+    "started_at": "2026-08-08T05:00:00+00:00",
+    "completed_at": "2026-08-08T05:02:15+00:00",
+    "duration_seconds": 135,
+    "error_message": null,
+    "checks_passed": 15,
+    "checks_warned": 2,
+    "checks_failed": 1,
+    "checks_skipped": 1,
+    "critical_issues": 0,
+    "high_issues": 1,
+    "medium_issues": 2,
+    "low_issues": 16,
+    "details": [
+        {
+            "name": "ssl",
+            "status": "pass",
+            "score": 8,
+            "max_score": 8,
+            "severity": "low",
+            "details": [],
+            "recommendation": ""
+        },
+        {
+            "name": "debug_mode",
+            "status": "fail",
+            "score": 0,
+            "max_score": 5,
+            "severity": "high",
+            "details": {
+                "WP_DEBUG": true
+            },
+            "recommendation": "Désactiver WP_DEBUG"
+        }
+    ],
+    "vulnerabilities": []
+}

@@ -1,0 +1,15 @@
+{
+    "success": false,
+    "error": {
+        "code": "CONFLICT",
+        "message": "Un backup est déjà en cours (ID: 4242)",
+        "http_status": 409
+    },
+    "meta": {
+        "plugin_version": "1.1.0",
+        "wp_version": "6.8",
+        "php_version": "8.2.33",
+        "timestamp": "2026-08-08T03:00:03+00:00",
+        "execution_time_ms": 12
+    }
+}

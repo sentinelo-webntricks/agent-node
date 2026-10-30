@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "data": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "rolled_back": 0,
+        "safety_backup_id": null,
+        "details": [
+            {
+                "type": "plugin",
+                "slug": "elementor",
+                "version": "3.31.2",
+                "success": true,
+                "rolled_back": false
+            }
+        ]
+    },
+    "meta": {
+        "plugin_version": "1.1.0",
+        "wp_version": "6.8",
+        "php_version": "8.2.33",
+        "timestamp": "2026-08-08T03:00:03+00:00",
+        "execution_time_ms": 8210
+    }
+}

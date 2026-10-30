@@ -1,0 +1,41 @@
+{
+    "restore_id": 77,
+    "scope": "all",
+    "status": "completed",
+    "started_at": "2026-08-08T10:00:00+00:00",
+    "completed_at": "2026-08-08T10:06:40+00:00",
+    "duration_seconds": 400,
+    "safety_backup_id": 4250,
+    "error_message": null,
+    "source_cloud_path": "backups/site-uuid/daily/backup-site-uuid-2026-08-01-030003.zip.enc",
+    "steps": [
+        {
+            "step": "safety_backup",
+            "status": "ok",
+            "message": "Safety backup #4250 créé",
+            "duration_ms": 90000,
+            "at": "2026-08-08T10:01:30+00:00"
+        },
+        {
+            "step": "checksum",
+            "status": "ok",
+            "message": "Empreinte SHA-256 vérifiée",
+            "duration_ms": 3100,
+            "at": "2026-08-08T10:02:10+00:00"
+        },
+        {
+            "step": "db_import",
+            "status": "ok",
+            "message": "Base de données restaurée",
+            "duration_ms": 120000,
+            "at": "2026-08-08T10:05:00+00:00"
+        },
+        {
+            "step": "completed",
+            "status": "ok",
+            "message": "Restauration terminée",
+            "duration_ms": null,
+            "at": "2026-08-08T10:06:40+00:00"
+        }
+    ]
+}

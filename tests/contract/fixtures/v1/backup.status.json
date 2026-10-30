@@ -1,0 +1,60 @@
+{
+    "backup_id": 4242,
+    "type": "daily",
+    "backup_type": "daily",
+    "status": "completed",
+    "started_at": "2026-08-08T03:00:03+00:00",
+    "completed_at": "2026-08-08T03:01:21+00:00",
+    "duration_seconds": 78,
+    "file_size_bytes": 734003200,
+    "db_size_bytes": 13107200,
+    "file_size_mb": 700,
+    "db_size_mb": 12.5,
+    "size_mb": 700,
+    "cloud_provider": "backblaze_b2",
+    "cloud_bucket": "sentinelo-backups",
+    "cloud_path": "backups/site-uuid/daily/backup-site-uuid-2026-08-08-030003.zip.enc",
+    "cloud_url": "https://s3.eu-central-003.backblazeb2.com/sentinelo-backups/backups/site-uuid/daily/x.zip.enc",
+    "checksum_sha256": "abababababababababababababababababababababababababababababababab",
+    "checksum": "abababababababababababababababababababababababababababababababab",
+    "error_message": null,
+    "retention_tag": "daily,weekly",
+    "expires_at": "2026-09-05T03:01:21+00:00",
+    "includes": [
+        "db",
+        "files",
+        "uploads"
+    ],
+    "steps": [
+        {
+            "step": "db_dump",
+            "status": "ok",
+            "message": "Base exportée (12.5 MB)",
+            "duration_ms": 4210,
+            "at": "2026-08-08T03:00:07+00:00"
+        },
+        {
+            "step": "archive",
+            "status": "ok",
+            "message": "18422 fichiers archivés",
+            "duration_ms": 51300,
+            "at": "2026-08-08T03:00:58+00:00"
+        },
+        {
+            "step": "cloud_upload",
+            "status": "ok",
+            "message": "Envoyé vers backblaze_b2",
+            "duration_ms": 22100,
+            "at": "2026-08-08T03:01:20+00:00"
+        },
+        {
+            "step": "completed",
+            "status": "ok",
+            "message": "Cloud: backups/site-uuid/daily/x.zip.enc",
+            "duration_ms": null,
+            "at": "2026-08-08T03:01:21+00:00"
+        }
+    ],
+    "mode": "full",
+    "base_backup_id": null
+}

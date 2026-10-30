@@ -1,0 +1,45 @@
+{
+    "backup_id": 4243,
+    "type": "manual",
+    "backup_type": "manual",
+    "status": "failed",
+    "started_at": "2026-08-08T03:00:03+00:00",
+    "completed_at": "2026-08-08T03:00:20+00:00",
+    "duration_seconds": 17,
+    "file_size_bytes": null,
+    "db_size_bytes": 13107200,
+    "file_size_mb": null,
+    "db_size_mb": 12.5,
+    "size_mb": null,
+    "cloud_provider": null,
+    "cloud_bucket": null,
+    "cloud_path": null,
+    "cloud_url": null,
+    "checksum_sha256": null,
+    "checksum": null,
+    "error_message": "Envoi cloud refusé (HTTP 403)",
+    "retention_tag": null,
+    "expires_at": null,
+    "includes": [
+        "db"
+    ],
+    "steps": [
+        {
+            "step": "db_dump",
+            "status": "ok",
+            "message": "Base exportée (12.5 MB)",
+            "duration_ms": 4210,
+            "at": "2026-08-08T03:00:07+00:00"
+        },
+        {
+            "step": "cloud_upload",
+            "status": "failed",
+            "message": "HTTP 403 du fournisseur",
+            "duration_ms": 1200,
+            "at": "2026-08-08T03:00:20+00:00"
+        }
+    ],
+    "mode": "full",
+    "base_backup_id": null,
+    "failed_at_step": "cloud_upload"
+}

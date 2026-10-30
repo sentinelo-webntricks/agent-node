@@ -1,0 +1,22 @@
+{
+  "name": "@sentinelo/agent",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Agent Sentinelo pour les applications Node.js (Next.js, Nuxt, Express, Nest…) : sauvegarde, restauration, scan de sécurité, supervision.",
+  "license": "UNLICENSED",
+  "bin": {
+    "sentinelo-agent": "src/cli.js"
+  },
+  "main": "./src/agent.js",
+  "files": [
+    "src",
+    "!src/**/*.test.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
