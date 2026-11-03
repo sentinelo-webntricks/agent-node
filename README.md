@@ -39,11 +39,8 @@ Sur le serveur du site, avec l'utilisateur qui fait tourner l'application. Les �
 Node.js 20 ou plus récent.
 
 ```bash
-npm install -g https://github.com/sentinelo-webntricks/agent-node/releases/download/v0.1.0/sentinelo-agent-0.1.0.tgz
+npm install -g @sentinelo/agent
 ```
-
-Le paquet arrive sur npm sous le nom `@sentinelo/agent` ; d'ici là, il s'installe depuis la
-release GitHub ci-dessus — le même code, la même commande `sentinelo-agent`.
 
 ### 2. Le préparer à la racine du projet
 
