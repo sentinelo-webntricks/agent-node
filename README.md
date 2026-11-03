@@ -69,8 +69,13 @@ fichiers sont sauvegardés.
 
 ### 3. Brancher le proxy inverse — à la main
 
-L'agent écoute sur `127.0.0.1:8787`. Votre proxy inverse doit lui transmettre
-`/_sentinelo/v1/`, et rendre la page de maintenance quand l'agent la pose :
+L'agent écoute par défaut sur `127.0.0.1:8787`. **Le port 8787 n'a rien d'obligatoire** :
+s'il est déjà pris sur le serveur, prenez n'importe quel port libre, avec
+`SENTINELO_PORT=<port>` dans l'environnement du démon ou `"port": <port>` dans
+`sentinelo.config.json`, et reportez ce même port dans le proxy ci-dessous.
+
+Votre proxy inverse doit transmettre `/_sentinelo/v1/` à l'agent, et rendre la page de
+maintenance quand l'agent la pose :
 
 **nginx**
 
@@ -172,6 +177,7 @@ Pour ajuster, `sentinelo.config.json` à la racine du projet :
 ```json
 {
   "siteUrl": "https://www.exemple.fr",
+  "port": 8787,
   "paths": { "uploads": "data/uploads" },
   "excludePaths": ["*.mp4", "public/videos"]
 }
